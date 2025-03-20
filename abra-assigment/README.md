@@ -1,12 +1,34 @@
-# React + Vite
+Weather on Wheels (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Project Overview
 
-Currently, two official plugins are available:
+This is a React-based frontend app for "Weather on Wheels" that allows users to create and view places on a map. Each place shows real-time weather data (temperature and pressure) using the OpenWeather API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎯 Features
 
-## Expanding the ESLint configuration
+Create a new place with a form (name, type, address)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Display places on a map 
+
+Select a place to fetch weather data (temperature & pressure)
+
+Line chart to visualize weather data (Recharts)
+
+Loading states during API requests
+
+Error handling for weather data failures
+
+🔧 Installation & Setup
+
+1️⃣ Clone the repo
+
+2️⃣ Install dependencies
+
+3️⃣ Run the development server
+
+🌟 Future Improvements
+
+Filter places by name and type 
+
+Happy coding! 🚀
+
