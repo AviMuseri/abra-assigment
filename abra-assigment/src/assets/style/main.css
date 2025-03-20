@@ -1,0 +1,36 @@
+/* Setup */
+@import 'setup/vars.css';
+@import 'setup/typography.css';
+
+/* Base */
+@import 'base/base.css';
+@import 'base/helpers.css';
+@import 'base/layout.css';
+@import 'base/forms.css';
+
+/* Components */
+@import 'cmps/PlaceIndex.css';
+@import 'cmps/AppHeader.css';
+@import 'cmps/UserMsg.css';
+
+@import 'cmps/PlaceFilter.css';
+@import 'cmps/PlaceList.css';
+@import 'cmps/PlacePreview.css';
+@import 'cmps/Loader.css';
+
+/* I reused an existing style from another project.*/
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app>* {
+    width: 100%;
+}
+
+main {
+    flex-grow: 1;
+}

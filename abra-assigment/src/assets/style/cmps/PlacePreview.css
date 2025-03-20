@@ -1,0 +1,15 @@
+.place-preview {
+    text-align: center;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.place-preview h4 {
+    text-transform: capitalize;
+    color: black;
+}
+
+.place-preview img {
+    max-width: 100px;
+}
