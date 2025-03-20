@@ -37,8 +37,6 @@ export function PlaceEdit() {
                     <option value="Hotel">Hotel</option>
                     <option value="Park">Park</option>
                 </select>
-                <option
-                />
 
                 <label htmlFor="address">address: </label>
                 <input type="text"

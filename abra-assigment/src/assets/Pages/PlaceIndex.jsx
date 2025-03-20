@@ -6,14 +6,16 @@ import { PlaceFilter } from '../cmps/PlaceFilter'
 
 export function PlaceIndex() {
     const [places, setPlaces] = useState(null)
+    const [filterBy, setFilterBy] = useState(placeService.getDefaultFilter())
 
     useEffect(() => {
-        loadPlaces()
-    }, [])
+        console.log("filterBy", filterBy)
+        loadPlaces(filterBy)
+    }, [filterBy])
 
-    async function loadPlaces() {
+    async function loadPlaces(filterBy) {
         try {
-            const newPlaces = await placeService.query()
+            const newPlaces = await placeService.query(filterBy)
             setPlaces(newPlaces)
         } catch (error) {
             console.log('cannot load Places ,', error)
@@ -25,7 +27,7 @@ export function PlaceIndex() {
         <div>
             <h3>Places App</h3>
             <main>
-                <PlaceFilter />
+                <PlaceFilter filterBy={filterBy} onSetFilter={setFilterBy} />
                 <PlaceList places={places} />
             </main>
         </div>

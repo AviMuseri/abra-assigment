@@ -4,7 +4,6 @@ export function PlacePreview({ place }) {
         <h4>{place.name}</h4>
         <h4>{place.type}</h4>
         <h4>{place.address}</h4>
-        <h1>⛐</h1>
     </>
     )
 }
