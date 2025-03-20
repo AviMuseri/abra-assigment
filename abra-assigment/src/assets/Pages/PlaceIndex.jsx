@@ -12,8 +12,12 @@ export function PlaceIndex() {
     }, [])
 
     async function loadPlaces() {
-        const newPlaces = await placeService.query()
-        setPlaces(newPlaces)
+        try {
+            const newPlaces = await placeService.query()
+            setPlaces(newPlaces)
+        } catch (error) {
+            console.log('cannot load Places ,', error)
+        }
     }
 
     if (!places) return <div><Loader /></div >
