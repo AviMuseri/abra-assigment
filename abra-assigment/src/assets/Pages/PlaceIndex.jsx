@@ -3,6 +3,7 @@ import { placeService } from '../services/place.service-local'
 import { PlaceList } from '../cmps/PlaceList'
 import { Loader } from '../cmps/Loader'
 import { PlaceFilter } from '../cmps/PlaceFilter'
+import { PlaceMap } from '../cmps/PlaceMap'
 
 export function PlaceIndex() {
     const [places, setPlaces] = useState(null)
@@ -29,6 +30,7 @@ export function PlaceIndex() {
             <main>
                 <PlaceFilter filterBy={filterBy} onSetFilter={setFilterBy} />
                 <PlaceList places={places} />
+                <PlaceMap />
             </main>
         </div>
     )
